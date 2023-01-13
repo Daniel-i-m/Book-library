@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/png" href="favifomatic/favicon-16x16.png" sizes="16x16" />
+  <title>Book Library || TOP</title>
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <h1>Book Library For You</h1>
+      <button class="btn" id="add-book"><span>+</span> Add a Book</button>
+    </div>
+
+    <form action="" method="" id="book-details">
+      <p>Book details</p>
+
+      <div id="form-close">
+        <div id="close"></div>
+      </div>
+
+      <div class="input-wrap">
+        <label for="title">Enter the <span>Title</span> :</label>
+        <input id="title" name="title" type="text" />
+
+        <div class="error-display"><span>*</span>Field must be Filled!</div>
+      </div>
+
+      <div class="input-wrap">
+        <label for="author">Enter the <span>Author</span> :</label>
+        <input id="author" name="title" type="text" />
+
+        <div class="error-display"><span>*</span>Field must be Filled!</div>
+      </div>
+
+      <div class="input-wrap">
+        <label for="pages">Enter the number of <span>Pages</span> :</label>
+        <input id="pages" name="pages" type="text" />
+
+        <div class="error-display">
+          <span>*</span>Field must be filled with number!
+        </div>
+      </div>
+
+      <div class="input-wrap">
+        <label for="read"><span>Read</span></label>
+        <input id="read" name="read" type="checkbox" />
+      </div>
+
+      <input id="add" class="btn" name="form-btn" type="submit" value="Add" />
+      <input id="cancel" class="btn" name="form-btn" type="reset" value="Clear" />
+    </form>
+  </div>
+
+  <div id="book-display">
+    <div class="book">
+      <div class="img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1616687551818-a9218cddd2dc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+      </div>
+
+      <div class="details">
+        <p>The Beauty and the Beast<span>234 Pg</span></p>
+        <p>
+          By <span class="author">Daniel Unknown</span><span class="status">READ</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="book">
+      <div class="img-wrap">
+        <img src="https://source.unsplash.com/collection/9973248/250x301" />
+      </div>
+
+      <div class="details">
+        <p>The Beauty and the Beast<span>534 Pg</span></p>
+        <p>
+          By <span class="author">Daniel Unknown</span><span class="status">READ</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="book">
+      <div class="img-wrap">
+        <img src="https://source.unsplash.com/collection/9973248/250x302" />
+      </div>
+
+      <div class="details">
+        <p>The Beauty and the Beast<span>234 Pg</span></p>
+        <p>
+          By <span class="author">Daniel Unknown</span><span class="status">READ</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
